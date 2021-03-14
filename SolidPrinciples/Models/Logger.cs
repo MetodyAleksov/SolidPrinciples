@@ -24,8 +24,6 @@ namespace SolidPrinciples.Models
             {
                 appender.Append(file);
             }
-
-            Console.WriteLine("Press any key to continue...");
         }
 
         public void Info(string date, string message)
@@ -36,7 +34,33 @@ namespace SolidPrinciples.Models
             {
                 appender.Append(file);
             }
-            Console.WriteLine("Press any key to continue...");
+        }
+        public void Warning(string date, string message)
+        {
+            State state = State.Warning;
+            ILogFile file = new LogFile(date, state, message);
+            foreach (IAppender appender in Appender)
+            {
+                appender.Append(file);
+            }
+        }
+        public void Critical(string date, string message)
+        {
+            State state = State.Critical;
+            ILogFile file = new LogFile(date, state, message);
+            foreach (IAppender appender in Appender)
+            {
+                appender.Append(file);
+            }
+        }
+        public void Fatal(string date, string message)
+        {
+            State state = State.Fatal;
+            ILogFile file = new LogFile(date, state, message);
+            foreach (IAppender appender in Appender)
+            {
+                appender.Append(file);
+            }
         }
     }
 }

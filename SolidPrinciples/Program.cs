@@ -7,7 +7,7 @@ namespace SolidPrinciples
     {
         static void Main(string[] args)
         {
-            var simpleLayout = new SimpleLayout();
+            var simpleLayout = new XmlLayout();
             var consoleAppender = new ConsoleAppender(simpleLayout);
 
             var file = new LogFile();

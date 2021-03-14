@@ -6,7 +6,7 @@ namespace SolidPrinciples
     {
         static void Main(string[] args)
         {
-            
+
         }
     }
 }

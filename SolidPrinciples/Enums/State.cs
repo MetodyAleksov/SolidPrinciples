@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SolidPrinciples.Enums
 {
-    public enum Type
+    public enum State
     {
         Error,
         Info,

@@ -1,19 +1,24 @@
 ﻿using System;
 using System.Text.RegularExpressions;
 using SolidPrinciples.Contracts;
+using SolidPrinciples.Enums;
 
 namespace SolidPrinciples.Models
 {
     public class LogFile : ILogFile
     {
-        public LogFile(string time, Type type, string message)
+        public LogFile()
+        {
+            
+        }
+        public LogFile(string time, State type, string message)
         {
             Time = time;
             Type = type;
             Message = message;
         }
         public string Time { get; private set; }
-        public Type Type { get; private set; }
+        public State Type { get; private set; }
         public string Message { get; private set; }
 
         public int Size

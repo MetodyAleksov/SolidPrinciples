@@ -24,6 +24,7 @@ namespace SolidPrinciples.Models
             {
                 appender.Append(file);
             }
+            
         }
 
         public void Info(string date, string message)

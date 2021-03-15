@@ -6,22 +6,27 @@ namespace OtherVersion.Classes
 {
     public class FileAppender : Appender
     {
-        public FileAppender(ILayout layout) 
+        private ILogFile file;
+        public FileAppender(ILayout layout, ILogFile file) 
             : base(layout)
         {
-
+            this.file = file;
         }
 
-        public override void Append(string date, ReportLeve reportLevel, string message)
+        public override void Append(string date, ReportLevel reportLevel, string message)
         {
-            string content = string.Format(layout.Type, date, reportLevel, message);
-
-            FileStream file = new FileStream(@"../../../log.txt", FileMode.Append);
-
-            using (StreamWriter writer = new StreamWriter(file))
+            if (ReportLevel <= reportLevel)
             {
-                writer.WriteLine(content);
+                this.MessagesAppended++;
+                string content = string.Format(layout.Type, date, reportLevel, message);
+
+                this.file.Write(content);
             }
+        }
+
+        public override string ToString()
+        {
+            return $"{base.ToString()}, File size: {this.file.Size}";
         }
     }
 }

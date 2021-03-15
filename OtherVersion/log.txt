@@ -1,2 +1,44 @@
 3/26/2015 2:08:11 PM - Error - Error parsing JSON.
 3/26/2015 2:08:11 PM - Info - User Pesho successfully registered.
+3/26/2015 2:08:11 PM - Error - Error parsing JSON.
+3/26/2015 2:08:11 PM - Info - User Pesho successfully registered.
+<log>
+   <date>3/26/2015 2:08:11 PM</date>
+   <level>Error</level>
+   <message>Error parsing JSON.</message>/n</log>
+<log>
+   <date>3/26/2015 2:08:11 PM</date>
+   <level>Info</level>
+   <message>User Pesho successfully registered.</message>/n</log>
+<log>
+   <date>3/26/2015 2:08:11 PM</date>
+   <level>Error</level>
+   <message>Error parsing JSON.</message>
+</log>
+<log>
+   <date>3/26/2015 2:08:11 PM</date>
+   <level>Info</level>
+   <message>User Pesho successfully registered.</message>
+</log>
+<log>
+   <date>3/26/2015 2:08:11 PM</date>
+   <level>Fatal</level>
+   <message>Error parsing JSON.</message>
+</log>
+<log>
+   <date>3/26/2015 2:08:11 PM</date>
+   <level>Critical</level>
+   <message>User Pesho successfully registered.</message>
+</log>
+<log>
+   <date>3/26/2015 2:08:11 PM</date>
+   <level>Fatal</level>
+   <message>Error parsing JSON.</message>
+</log>
+<log>
+   <date>3/26/2015 2:08:11 PM</date>
+   <level>Critical</level>
+   <message>User Pesho successfully registered.</message>
+</log>
+3/26/2015 2:38:01 PM - Critical - No connection string found in App.config
+3/26/2015 2:39:19 PM - Fatal - mscorlib.dll does not respond

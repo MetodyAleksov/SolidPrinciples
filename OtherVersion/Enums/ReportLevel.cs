@@ -1,6 +1,6 @@
 ﻿namespace OtherVersion.Enums
 {
-    public enum ReportLeve
+    public enum ReportLevel
     {
         Info = 1,
         Warning = 2,

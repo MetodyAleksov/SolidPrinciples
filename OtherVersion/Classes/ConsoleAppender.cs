@@ -12,10 +12,14 @@ namespace OtherVersion.Classes
 
         }
 
-        public override void Append(string date, ReportLeve reportLevel, string message)
+        public override void Append(string date, ReportLevel reportLevel, string message)
         {
-            string content = string.Format(this.layout.Type, date, reportLevel, message);
-            Console.WriteLine(content);
+            if (ReportLevel <= reportLevel)
+            {
+                this.MessagesAppended++;
+                string content = string.Format(this.layout.Type, date, reportLevel, message);
+                Console.WriteLine(content);
+            }
         }
     }
 }

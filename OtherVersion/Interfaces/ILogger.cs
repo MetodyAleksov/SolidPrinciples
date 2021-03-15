@@ -2,6 +2,7 @@
 {
     public interface ILogger
     {
+        public void GetLoggerInfo();
         public void Fatal(string date, string message);
         public void Critical(string date, string message);
         public void Warning(string date, string message);
